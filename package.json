@@ -21,6 +21,6 @@
     "test": "node test/test.js"
   },
   "main": "uuid.js",
-  "repository": "broofa/node-uuid",
+  "repository": "KenanY/node-uuid",
   "license": "MIT"
 }
