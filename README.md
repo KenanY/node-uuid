@@ -1,45 +1,30 @@
 # node-uuid
 
-Simple, fast generation of [RFC4122](http://www.ietf.org/rfc/rfc4122.txt) UUIDS.
+Fork of node-uuid for saner browserify support.
 
-Features:
+## Example
 
-* Generate RFC4122 version 1 or version 4 UUIDs
-* Runs in node.js and all browsers.
-* Cryptographically strong random number generation on supporting platforms
-* 1.1K minified and gzip'ed  (Want something smaller?  Check this [crazy shit](https://gist.github.com/982883) out! )
-* [Annotated source code](http://broofa.github.com/node-uuid/docs/uuid.html)
-* Comes with a Command Line Interface for generating uuids on the command line
-
-## Getting Started
-
-Install it in your browser:
-
-```html
-<script src="uuid.js"></script>
-```
-
-Or in node.js:
-
-```
-npm install node-uuid
-```
-
-```javascript
+``` javascript
 var uuid = require('node-uuid');
+
+uuid.v1();
+// => '6c84fb90-12c4-11e1-840d-7b25c5ee775a'
+
+uuid.v4();
+// => '110ec58a-a0f2-4ac4-8393-c866d813b8d1'
 ```
 
-Then create some ids ...
+## Installation
 
-```javascript
-// Generate a v1 (time-based) id
-uuid.v1(); // -> '6c84fb90-12c4-11e1-840d-7b25c5ee775a'
-
-// Generate a v4 (random) id
-uuid.v4(); // -> '110ec58a-a0f2-4ac4-8393-c866d813b8d1'
+```
+npm install KenanY/node-uuid
 ```
 
 ## API
+
+``` javascript
+var uuid = require('node-uuid');
+```
 
 ### uuid.v1([`options` [, `buffer` [, `offset`]]])
 
